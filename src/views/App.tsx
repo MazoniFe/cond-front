@@ -1,14 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Home';
-import '../output.css'
 
 const App: React.FC = () => {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
+      <div className=''>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </div>
     </Router>
   );
 };
